@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 841.89 595.28">
+  <defs>
+    <style>
+      .st0 {
+       fill:rgb(72, 9, 246);
+       opacity:0.5;
+       transition:transform 6s,fill 15s
+      }
+      .st0:hover{
+         fill:rgb(244, 11, 11);
+         opacity:1;
+         transform:scaleY(5);
+         transition:transform 6s,fill 5s
+         
+      }
+       
+      .st1 {
+        fill:rgb(247, 251, 5);
+        opacity:1.5;
+      }
+      .st1:hover{
+        fill:rgb(122, 181, 45);
+        opacity:1;
+        transform:scaleX(5);
+        transition: transform 5s;
+        transform: rotate (360deg);
+
+        }
+       
+    </style>
+  </defs>
+  <g id="Calque_1">
+    <rect class="st0" x="421" y="189" width="308" height="242"/>
+  </g>
+  <g id="Calque_2">
+    <ellipse class="st1" cx="246" cy="310" rx="138" ry="115"/>
+  </g>
+   <script>
+   alert("svg game");
+    var HAMOU = document.getElementById("Calque_1");
+        alert(HAMOU);
+        HAMOU.addEventListener("mouseup",function(){alert("clicked");});
+        alert("svg game");
+    var HAMOU2 = document.getElementById("Calque_2");
+        alert(HAMOU);
+        HAMOU2.addEventListener("mouseup",function(){alert("clicked2");});
+      var rect = document.getElementById("rect1");
+  rect.addEventListener("click", function () {
+    rect.setAttribute("fill", "blue");
+    rect.setAttribute("transform", "scale(1.2)");
+  });
+  </script>
+</svg>
